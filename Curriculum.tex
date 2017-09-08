@@ -1,0 +1,178 @@
+%% Inicio del archivo `template-es.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,roman]{moderncv}   % opciones posibles incluyen tamaÃ±o de fuente ('10pt', '11pt' and '12pt'), tamaÃ±o de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+
+% temas de moderncv
+\moderncvstyle{casual}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{grey}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+
+%\nopagenumbers{}                             % elimine el 
+
+% ajustes para los margenes de pagina
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % si desea cambiar el ancho de la columna para las fechas
+
+% datos personales
+\name{Sebastián Ernesto}{González Villena}
+%%\title{Título del CV (opcional)}
+\address{Vicuña Mackenna 58 ~ Providencia}{Santiago}
+\phone[mobile]{+56~(9)~71768325}                     
+%\phone[fixed]{+56~(2)~678~901}                      
+\email{sgonzalez@debianchile.cl}                                 
+\homepage{https://github.com/brutalchrist}
+%%\extrainfo{informacion adicional}
+\photo[64pt][0.0pt]{picture}
+%%\quote{Alguna cita (opcional)}
+
+% para mostrar etiquetas numericas en la bibliografia (por omision no se muestran etiquetas), solo es util si desea incluir citas en en CV
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliografia con varias fuentes
+%\usepackage{multibib}
+%\newcites{book,misc}{{Libros},{Otros}}
+%----------------------------------------------------------------------------------
+%            contenido
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Antecedentes personales}
+\cventry{RUT}{16.727.053-0}{}{}{}{}
+\cventry{Nacimiento}{18 de Abril de 1988}{}{}{}{}
+
+\section{Formación académica}
+%\cventry{2007--2009}{Ingeniería Civil Informática}{Universidad Católica del Maule}{Talca}{}{Incompleta}
+\cventry{2010--2013}{Ingeniería en Informática}{Universidad Autónoma de Chile}{Talca}{}{}
+\cvitem{Proyecto Título}{\emph{Creación e implementación de Línea Base para una empresa}}
+\cvitem{Descripción}{Definición de parámetros de configuración para las estaciones de trabajo de una empresa, generando una distribución personalizada de GNU/Linux}
+
+\section{Formación complementaria}
+\cventry{2015}{Certificación académica}{Scrum Manager Nivel Experto}{Santiago}{}{}
+
+\section{Habilidades}
+	\cvitemwithcomment{Desarrollo Web}{}{PHP, Javascript, jQuery, Ajax, Java, JSF, Richfaces, Primefaces}
+	\cvitemwithcomment{Bases de datos}{}{Oracle, MySQL, Postgres}
+	\cvitemwithcomment{Serv. Aplicaciones}{}{Apache, Weblogic, JBoss}
+
+
+\section{Experiencia Laboral}
+\cventry{2015--Actual}{Desarrollador de Software}{LemonTech}{Santiago}{}{Empresa dedicada al desarrollo de soluciones para abogados.\newline{}%
+\begin{itemize}%
+	\item The Timebilling: Software de gestión legal.
+	\begin{itemize}%
+		\item Desarrollo web con backend: PHP. Frontend:  HTML, jQuery, Javascript y Ajax.
+		\item Base de datos MySQL.
+		\item Servido en GNU/Linux corriendo en Apache2.
+		\item Control de versiones GIT, utilizando plataforma GitHub.
+	\end{itemize}
+	\item Competencias generales.
+	\begin{itemize}%
+		\item Desarrollo ágil utilizando SCRUM.
+		\item Entorno cultural tecnológico fomentando el aprendizaje comunitario a través de charlas semanales, pair programming y desarrollos extra-laborales.
+	\end{itemize}
+\end{itemize}
+}
+
+\cventry{2014--2015}{Desarrollador de Software}{Guadaltel Chile}{Santiago}{}{Empresa dedicada al desarrollo de aplicaciones gubernamentales con Software Libre.\newline{}%
+\begin{itemize}%
+	\item Siapertra: Sistema de tramitación automática de actos administrativos.
+	\begin{itemize}%
+		\item Desarrollo web con backend: Java. Frontend:  JSF y Richfaces.
+		\item Base de datos Oracle utilizando ORM Hibernate.
+		\item Servido en GNU/Linux corriendo sobre WebLogic.
+	\end{itemize}
+	\item Sagir2 Biobio: Sistema de gestión de inversión regional.
+	\begin{itemize}%
+		\item Desarrollo web con backend: Java. Frontend:  JSF y Primefaces.
+		\item Base de datos Postgres utilizando ORM Hibernate.
+		\item Servido en GNU/Linux corriendo sobre JBoss.
+	\end{itemize}
+	\item Servicios Web IPS.
+	\begin{itemize}%
+		\item Servido en GNU/Linux corriendo sobre JBoss Fuse.
+		\item Control de versiones SVN.
+	\end{itemize}
+	\item Competencias generales.
+	\begin{itemize}%
+		\item Desarrollo ágil utilizando SCRUM.
+		\item Intercomunicación de la empresa (España) y los clientes (Chile).
+	\end{itemize}
+\end{itemize}
+}
+
+\cventry{2010}{Desarrollador de Software}{VisionLabs Ltda.}{Talca}{}{Empresa dedicada al desarrollo de aplicaciones con Visión Computacional.\newline{}%
+\begin{itemize}%
+\item Limpet: Software de vigilancia inteligente.
+  \begin{itemize}%
+  \item Desarrollo de escritorio utilizando C++ e interfaz gráfica Qt.
+  \item Utilización de librería de visión computacional OpenCV.
+  \item Base de datos MySQL.
+  \end{itemize}
+\end{itemize}
+}
+
+\cventry{2013}{Alumno practicante}{Constructora Galilea S.A.}{Talca}{}{Practica orientada a la administración de servidores GNU/Linux (Squid, Openfire, Oracle Linux) y desarrollo de módulos en Python. \newline{}
+\begin{itemize}%
+\item Sistemas internos.
+  \begin{itemize}%
+  \item Sistemas desarrollados en Python con interfaz gráfica GTK.
+  \item Base de datos Postgres utilizando ORM interno.
+  \end{itemize}
+\item Daemon: Desarrollo de Daemon para intercomunicación de sistemas internos y ERP JD Edwars.
+  \begin{itemize}%
+  \item Desarrollado en C.
+  \item Corriendo bajo GNU/Linux (Oracle RedHat).
+  \end{itemize}
+\item Gestión de servidores GNU/Linux.
+  \begin{itemize}%
+  \item Distribución CentOS.
+  \item Instalación y configuración de servidor de mensajería Openfire.
+  \item Instalación y configuración de proxy Squid.
+  \end{itemize}
+\end{itemize}
+}
+
+\cventry{2012--2013}{Relator y fundador Taller de Arduino}{Universidad Autónoma de Chile}{Talca}{}{ 
+\begin{itemize}%
+\item Temáticas. 
+  \begin{itemize}%
+  \item Principios básicos de electrónica.
+  \item Estructura y uso de una placa Arduino.
+  \item Sensores (inputs) y elementos de despliegue (outputs).
+  \item Programación de un Arduino.
+  \end{itemize}
+\item Proyecto final de taller.
+  \begin{itemize}%
+  \item Robot automóvil:  Automóvil capaz de avanzar por un terreno liso evitando los obstáculos presentados.
+  \end{itemize}
+\end{itemize}
+}
+
+
+
+
+%\section{Idiomas}
+%\cvitemwithcomment{Ingles}{Básico}{Lectura lenguaje técnico Informático, comunicación básica}
+
+%\section{Competencias profesionales}
+%\cvitemwithcomment{Desarrollo escritorio}{Intermedio}{Qt, C++, C, GTK, Python, Bash, Java}
+%\cvitemwithcomment{Desarrollo web}{Intermedio}{HTML, PHP, JQuery, JSF}
+%\cvitemwithcomment{Bases de datos}{Intermedio}{MySQL, PosgrestSQL}
+%\cvitemwithcomment{Sistemas operativos}{Avanzado}{GNU/Linux}
+%\cvitemwithcomment{Electrónica}{Intermedio}{Arduino, Circuitos integrados}
+
+%\section{Intereses}
+%\cvitem{Electrónica}{Desarrollo de placas electrónicas mediantes circuitos integrados. Proyectos utilizando placa de desarrollo Arduino.}
+%\cvitem{Open source}{Participar en comunidades Open Source. Dictar charlas en eventos relacionados.}
+%\cvitem{}{}
+
+\renewcommand{\listitemsymbol}{-~} 
+
+\end{document}
+
